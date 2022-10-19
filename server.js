@@ -6,16 +6,16 @@ const colors = require("colors");
 const app = require("./app");
 
 // database connection
-// mongoose
-//   .connect(process.env.DATABASE_LOCAL, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })
-//   .then(() => {
-//     console.log(`Database connection is successful 🛢`.red.bold);
-//   });
+mongoose
+  .connect(process.env.DATABASE_LOCAL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log(`Database connection is successful 🛢`.red.bold);
+  });
 
-// console.log(process.env.DATABASE_LOCAL)
+console.log(process.env.DATABASE_LOCAL)
 // server
 const port = process.env.PORT || 8000;
 
