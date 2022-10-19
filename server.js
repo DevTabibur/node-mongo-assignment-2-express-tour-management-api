@@ -15,7 +15,6 @@ mongoose
     console.log(`Database connection is successful 🛢`.red.bold);
   });
 
-console.log(process.env.DATABASE_LOCAL)
 // server
 const port = process.env.PORT || 8000;
 
